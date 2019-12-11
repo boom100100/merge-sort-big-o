@@ -43,11 +43,11 @@ mergeSort(array)
 
 **The cost of merging**
 
-So how costly is something like this.  Well let's calculate the merging section first.  Notice that for an array of length 8, our merge section has three levels.  So notice that it's three levels because we split our array in half until the length is one.  So how many times do you have to split an array in half until the length is one?  log(n).  
+So how costly is something like this.  Well let's calculate the merging section first.  Notice that for an array of length 8, our merge section has three levels.  So notice that it's three levels because we split our array in half until the length is one.  So how many times do you have to split an array in half until the length is one?  log<sub>2</sub>(n).  
 
-> We said that the definition of log(n) is the number of times you have to press divide by 2 on a calculator until you get to one.  
+> We said that the definition of log<sub>2</sub>(n) is the number of times you have to divide n by 2 until you get 1 (i.e. 2<sup>log<sub>2</sub>(n)</sup> = n).  
 
-Ok so the height of this merge section is log(n).  Now what is the cost at our first level.  
+Ok so the height of this merge section is log<sub>2</sub>(n).  Now what is the cost at our first level.  
 
 ```javascript
 // merge([2], [1]) merge([7],[6])  merge([8], [3])  merge([4], [5])
