@@ -18,7 +18,7 @@ function mergeSort(array){
     return array
   } else {
 
-    merge(mergeSort(firstHalf), mergeSort(secondHalf))
+    return merge(mergeSort(firstHalf), mergeSort(secondHalf))
   }
 }
 ```
@@ -95,3 +95,5 @@ Going forward, you can assume that the cost of sorting an array is n log n.  And
 ### Summary
 
 We calculate the big O of mergeSort by remembering that the big O of merging is equal to the length of our two subarrays combined.  And that number of times we need to incur the merge operation is equal to the number of times we need to split the length of our array in two to get down to one.  So the big o of merge sort is n log n.  
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/merge-sort-big-o'>Merge Sort Big O</a> on Learn.co and start learning to code for free.</p>
